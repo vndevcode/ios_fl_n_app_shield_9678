@@ -44,13 +44,17 @@ class AppTextField extends StatelessWidget {
               width: 1.3,
             ),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 14),
+          padding: const EdgeInsets.only(right: 14),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               if (icon != null) ...[
-                FaIcon(icon, size: 15, color: AppColors.textMuted),
-                const SizedBox(width: 12),
+                SizedBox(
+                  width: 44,
+                  child: Center(
+                    child: FaIcon(icon, size: 15, color: AppColors.textMuted),
+                  ),
+                ),
               ],
               Expanded(
                 child: TextField(

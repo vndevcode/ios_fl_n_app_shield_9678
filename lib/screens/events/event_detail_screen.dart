@@ -150,6 +150,7 @@ class _DetailRow extends StatelessWidget {
         Container(
           width: 40,
           height: 40,
+          alignment: Alignment.center,
           decoration: BoxDecoration(
             color: AppColors.emeraldDeep,
             borderRadius: BorderRadius.circular(11),

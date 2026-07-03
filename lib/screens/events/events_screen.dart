@@ -179,6 +179,7 @@ class _NoEvents extends StatelessWidget {
           Container(
             width: 66,
             height: 66,
+            alignment: Alignment.center,
             decoration: BoxDecoration(
               color: AppColors.surfaceAlt,
               shape: BoxShape.circle,

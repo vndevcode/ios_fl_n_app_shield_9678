@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ios_fl_n_app_shield_9678/constants/app_info.dart';
-import 'package:ios_fl_n_app_shield_9678/screens/pass/widgets/qr_like_graphic.dart';
 import 'package:ios_fl_n_app_shield_9678/theme/app_colors.dart';
 import 'package:ios_fl_n_app_shield_9678/theme/app_text_styles.dart';
 
@@ -53,6 +52,7 @@ class VisitorPassCard extends StatelessWidget {
               Container(
                 width: 40,
                 height: 40,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: bright ? AppColors.emeraldDeep : AppColors.emerald,
                   shape: BoxShape.circle,
@@ -79,14 +79,6 @@ class VisitorPassCard extends StatelessWidget {
               ),
               _Diamond(bright: bright),
             ],
-          ),
-          const SizedBox(height: 20),
-          QrLikeGraphic(
-            seed: AppInfo.passCode,
-            size: compact ? 130 : 158,
-            foreground:
-                bright ? AppColors.emeraldDeep : const Color(0xFF06170F),
-            background: bright ? const Color(0xFFFDFBF3) : AppColors.beige,
           ),
           const SizedBox(height: 20),
           Container(

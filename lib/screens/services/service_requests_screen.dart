@@ -138,7 +138,9 @@ class _Row extends StatelessWidget {
         children: [
           SizedBox(
             width: 20,
-            child: FaIcon(icon, size: 13, color: AppColors.neon),
+            child: Center(
+              child: FaIcon(icon, size: 13, color: AppColors.neon),
+            ),
           ),
           const SizedBox(width: 8),
           SizedBox(

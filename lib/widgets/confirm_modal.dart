@@ -42,6 +42,7 @@ class _ConfirmBody extends StatelessWidget {
         Container(
           width: 76,
           height: 76,
+          alignment: Alignment.center,
           decoration: BoxDecoration(
             color: AppColors.emeraldDeep,
             shape: BoxShape.circle,

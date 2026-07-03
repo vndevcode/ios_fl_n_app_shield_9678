@@ -41,6 +41,7 @@ class EventCard extends StatelessWidget {
               Container(
                 width: 46,
                 height: 46,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: AppColors.emeraldDeep,
                   borderRadius: BorderRadius.circular(12),

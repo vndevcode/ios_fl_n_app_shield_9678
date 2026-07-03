@@ -59,6 +59,7 @@ class _AssistantScreenState extends State<AssistantScreen> {
                 Container(
                   width: 46,
                   height: 46,
+                  alignment: Alignment.center,
                   decoration: BoxDecoration(
                     color: AppColors.emeraldDeep,
                     shape: BoxShape.circle,
@@ -119,6 +120,7 @@ class _Bubble extends StatelessWidget {
               width: 30,
               height: 30,
               margin: const EdgeInsets.only(right: 8),
+              alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: AppColors.emeraldDeep,
                 shape: BoxShape.circle,
@@ -259,6 +261,7 @@ class _InputBar extends StatelessWidget {
           Container(
             width: 46,
             height: 46,
+            alignment: Alignment.center,
             decoration: BoxDecoration(
               color: AppColors.neonDim,
               shape: BoxShape.circle,

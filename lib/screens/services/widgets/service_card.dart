@@ -31,6 +31,7 @@ class ServiceCard extends StatelessWidget {
               Container(
                 width: 50,
                 height: 50,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: AppColors.emeraldDeep,
                   borderRadius: BorderRadius.circular(14),
