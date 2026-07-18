@@ -1,6 +1,6 @@
-# Niagara Service Resort Casino
+# Niagara Service Resort
 
-A fully navigable visitor-service companion app prototype for a resort-casino
+A fully navigable visitor-service companion app prototype for a resort
 building, built with Flutter. It is **not** a gambling app — it focuses only on
 guest support: requesting services, using a visitor pass, exploring resort
 places, viewing building events, submitting event requests, and asking prepared
@@ -46,3 +46,26 @@ flutter test                # widget flow tests in test/app_flow_test.dart
 
 QA build hooks: `--dart-define=SKIP_ONBOARDING=true` boots straight to the main
 app, and `--dart-define=INITIAL_TAB=<0-4>` opens a specific tab.
+
+## Android release (Google Play)
+
+Release builds are signed with a local upload keystore. Ready for Play Console
+upload (`flutter build appbundle --release`).
+
+| Item | Value |
+|------|-------|
+| Bundle / applicationId | `com.ghkdfg.dkjsf` |
+| Keystore | `android/app/key.jks` |
+| Properties | `android/key.properties` |
+| Alias | `upload` |
+| Store / key password | `123456` |
+| Minify / shrink | enabled (`proguard-rules.pro`) |
+| Orientation | portrait (locked in `AndroidManifest.xml`) |
+
+`key.properties` and `*.jks` are gitignored — keep a backup of `key.jks` offline;
+losing it blocks Play Store updates for this signing key.
+
+```bash
+flutter build appbundle --release
+# output: build/app/outputs/bundle/release/app-release.aab
+```

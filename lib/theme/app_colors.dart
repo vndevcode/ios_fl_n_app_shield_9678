@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Central color palette for Niagara Service Resort Casino.
+/// Central color palette for Niagara Service Resort.
 ///
 /// Derived directly from the supplied visuals: emerald green building,
 /// neon architectural lines, warm hotel interior lighting, charcoal blacks,

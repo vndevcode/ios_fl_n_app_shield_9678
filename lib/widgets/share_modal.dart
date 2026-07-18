@@ -59,7 +59,7 @@ class _ShareBody extends StatelessWidget {
                   const FaIcon(FontAwesomeIcons.locationDot,
                       size: 14, color: AppColors.neon),
                   const SizedBox(width: 8),
-                  Text('Niagara Service Resort Casino',
+                  Text('Niagara Service Resort',
                       style: AppText.caption.copyWith(color: AppColors.neon)),
                 ],
               ),
@@ -82,7 +82,7 @@ class _ShareBody extends StatelessWidget {
                   await Clipboard.setData(
                     ClipboardData(
                       text:
-                          '$placeName — $location, Niagara Service Resort Casino',
+                          '$placeName — $location, Niagara Service Resort',
                     ),
                   );
                   if (context.mounted) {

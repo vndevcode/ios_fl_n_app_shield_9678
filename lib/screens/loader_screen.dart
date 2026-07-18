@@ -83,7 +83,7 @@ class _LoaderScreenState extends State<LoaderScreen>
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40),
                   child: Text(
-                    'Service Resort Casino',
+                    'Service Resort',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 26,
